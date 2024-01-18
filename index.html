@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -29,8 +29,14 @@
         .Montserrat {
             font-family: 'Montserrat', sans-serif;
         }
-        .Bebas-Neue{
+
+        .Bebas-Neue {
             font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .imgwidth {
+            width: 550px;
+            height: auto;
         }
     </style>
 </head>
@@ -42,22 +48,42 @@
                 <img class="w-10 h-10" src="./img/logo.png" alt="image loading">
                 <h1 class="text-2xl"><span class="text-customColor">Teezy</span> Vibe</h1>
             </div>
-            <ul class="text-base flex gap-4 font-medium">
-                <li>Home</li>
-                <li>Product</li>
-                <li>About us</li>
-                <li>Contact us</li>
+            <ul class="hidden md:flex text-base gap-4 font-medium">
+                <li class=" text-center ">Home</li>
+                <li class=" text-center ">Product</li>
+                <li class=" text-center ">About us</li>
+                <li class=" text-center ">Contact us</li>
             </ul>
+            <svg class="flex md:hidden" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                fill="none">
+                <path
+                    d="M5 16.25C5.69036 16.25 6.25 15.6904 6.25 15C6.25 14.3096 5.69036 13.75 5 13.75C4.30964 13.75 3.75 14.3096 3.75 15C3.75 15.6904 4.30964 16.25 5 16.25Z"
+                    fill="black" />
+                <path
+                    d="M25.075 13.75H9.925C9.27607 13.75 8.75 14.2761 8.75 14.925V15.075C8.75 15.7239 9.27607 16.25 9.925 16.25H25.075C25.7239 16.25 26.25 15.7239 26.25 15.075V14.925C26.25 14.2761 25.7239 13.75 25.075 13.75Z"
+                    fill="black" />
+                <path
+                    d="M25.075 20H4.925C4.27607 20 3.75 20.5261 3.75 21.175V21.325C3.75 21.9739 4.27607 22.5 4.925 22.5H25.075C25.7239 22.5 26.25 21.9739 26.25 21.325V21.175C26.25 20.5261 25.7239 20 25.075 20Z"
+                    fill="black" />
+                <path
+                    d="M25.075 7.5H4.925C4.27607 7.5 3.75 8.02607 3.75 8.675V8.825C3.75 9.47393 4.27607 10 4.925 10H25.075C25.7239 10 26.25 9.47393 26.25 8.825V8.675C26.25 8.02607 25.7239 7.5 25.075 7.5Z"
+                    fill="black" />
+            </svg>
         </nav>
-        <div class="flex justify-center items-center">
-            <div>
-                <h1 class="Bebas-Neue font-normal text-7xl"><span class="text-[#FABE4C;]">Summer Vibes and</span><br><span class="text-[#363958]">T-shirt Treasures</span></h1>
-                <p class="pt-3 pb-3 text-base w-2/4 h-auto">Discover your style at our T-shirt shop, where comfort meets creativity in every thread.</p>
+
+        <div class="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-6">
+            <div class="md:w-2/3 lg:w-2/3 flex flex-col justify-center items-center md:items-start lg:items-start">
+                <h1
+                    class="text-center md:text-start lg:text-start Bebas-Neue font-normal text-4xl md:text-5xl lg:text-6xl">
+                    <span class="text-[#FABE4C;]">Summer Vibes and</span><br><span class="text-[#363958]">T-shirt
+                        Treasures</span></h1>
+                <p class="text-center  md:text-start lg:text-start pt-3 pb-3 text-base h-auto">Discover your style at
+                    our T-shirt shop, where comfort meets creativity in every thread.</p>
                 <button
                     class="bg-customColor text-white flex justify-center items-center gap-1 w-36 h-14 rounded-xl bg-gradient-to-r from-orange-400 to-customColor"><img
                         class="w-6" src="./img/shopping-cart 1.png" alt="">Buy Now</button>
             </div>
-            <div class="w-9/12">
+            <div class="md:w-2/3 lg:w-2/3">
                 <img src="./img/Asset 1-8.png" alt="image loading...">
             </div>
         </div>
